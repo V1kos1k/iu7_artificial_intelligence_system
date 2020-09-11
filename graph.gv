@@ -151,7 +151,6 @@ graph game_map {
     "Crysis";
     "Far Cry";
     "Battlefield";
-    "Crysis";
     "DOOM";
     "Wolfenstein";
     "Bulletstorm";
@@ -320,7 +319,6 @@ graph game_map {
     "Стрелялка" -- "Crysis";
     "Стрелялка" -- "Far Cry";
     "Стрелялка" -- "Battlefield";
-    "Стрелялка" -- "Crysis";
     "Стрелялка" -- "DOOM";
     "Стрелялка" -- "Wolfenstein";
     "Стрелялка" -- "Bulletstorm";
