@@ -1,0 +1,231 @@
+node "Компьютерные игры" 83.599 6.25 4.874 0.5 "Компьютерные игры" solid ellipse black lightgrey
+node "Ролевая игра с открытым миром" 54.46 5.25 8.0481 0.5 "Ролевая игра с открытым миром" solid ellipse black lightgrey
+node "Боевик с открытым миром" 83.599 5.25 6.6248 0.5 "Боевик с открытым миром" solid ellipse black lightgrey
+node "Глобальна стратегия" 104.02 5.25 5.6938 0.5 "Глобальна стратегия" solid ellipse black lightgrey
+node Ролевая 38.599 4.25 2.5867 0.5 Ролевая solid ellipse black lightgrey
+node Боевик 83.599 4.25 2.4597 0.5 Боевик solid ellipse black lightgrey
+node Стратегия 130.07 4.25 2.6312 0.5 Стратегия solid ellipse black lightgrey
+node "Сетевая текстовая" 16.793 3.25 4.7399 0.5 "Сетевая текстовая" solid ellipse black lightgrey
+node "Сетевая ролевая" 38.599 3.25 4.4867 0.5 "Сетевая ролевая" solid ellipse black lightgrey
+node Сражения 74.446 3.25 2.8868 0.5 Сражения solid ellipse black lightgrey
+node "Боевая гонка" 92.752 3.25 4.2482 0.5 "Боевая гонка" solid ellipse black lightgrey
+node "Непрямого контроля" 130.07 3.25 5.7085 0.5 "Непрямого контроля" solid ellipse black lightgrey
+node "Глобальная военная" 148.39 3.25 6.3422 0.5 "Глобальная военная" solid ellipse black lightgrey
+node Пазл 9.8626 2.25 1.7417 0.5 Пазл solid ellipse black lightgrey
+node Квест 16.793 2.25 1.6478 0.5 Квест solid ellipse black lightgrey
+node Браузерная 35.127 2.25 3.0829 0.5 Браузерная solid ellipse black lightgrey
+node Приключения 42.057 2.25 3.555 0.5 Приключения solid ellipse black lightgrey
+node Платформер 66.085 2.25 3.1232 0.5 Платформер solid ellipse black lightgrey
+node Скрытность 74.446 2.25 2.728 0.5 Скрытность solid ellipse black lightgrey
+node Поединок 92.752 2.25 3.2645 0.5 Поединок solid ellipse black lightgrey
+node Гонка 110.33 2.25 2.2363 0.5 Гонка solid ellipse black lightgrey
+node Экономическая 127.85 2.25 4.6129 0.5 Экономическая solid ellipse black lightgrey
+node Башни 131.53 2.25 2.0054 0.5 Башни solid ellipse black lightgrey
+node Военная 148.39 2.25 2.8549 0.5 Военная solid ellipse black lightgrey
+node Карточная 163.33 2.25 2.7208 0.5 Карточная solid ellipse black lightgrey
+node Учебная 4.8765 1.25 2.5867 0.5 Учебная solid ellipse black lightgrey
+node Вопросы 16.793 1.25 2.1022 0.5 Вопросы solid ellipse black lightgrey
+node Общение 31.752 1.25 2.743 0.5 Общение solid ellipse black lightgrey
+node Геройская 42.057 1.25 2.8248 0.5 Геройская solid ellipse black lightgrey
+node Путешествия 51.474 1.25 2.8772 0.5 Путешествия solid ellipse black lightgrey
+node Аркада 61.849 1.25 2.1693 0.5 Аркада solid ellipse black lightgrey
+node Хоррор 74.446 1.25 1.7819 0.5 Хоррор solid ellipse black lightgrey
+node Стрелялка 92.752 1.25 2.9292 0.5 Стрелялка solid ellipse black lightgrey
+node Спорт 110.33 1.25 1.655 0.5 Спорт solid ellipse black lightgrey
+node Симулятор 119.93 1.25 2.8323 0.5 Симулятор solid ellipse black lightgrey
+node Сим 127.4 1.25 1.5582 0.5 Сим solid ellipse black lightgrey
+node Строительная 132.42 1.25 3.6371 0.5 Строительная solid ellipse black lightgrey
+node Полководческая 142.74 1.25 4.6355 0.5 Полководческая solid ellipse black lightgrey
+node Тактическая 151.22 1.25 3.3836 0.5 Тактическая solid ellipse black lightgrey
+node Логическая 166.77 1.25 3.1974 0.5 Логическая solid ellipse black lightgrey
+node Кубики 1.1404 0.25 2.2808 0.5 Кубики solid ellipse black lightgrey
+node "Большие продажи" 4.8765 0.25 4.6824 0.5 "Большие продажи" solid ellipse black lightgrey
+node "Кто хочет стать миллионером?" 11.293 0.25 7.6458 0.5 "Кто хочет стать миллионером?" solid ellipse black lightgrey
+node "Поле чудес" 16.793 0.25 2.8549 0.5 "Поле чудес" solid ellipse black lightgrey
+node "4 фотки 1 слово" 20.335 0.25 3.7339 0.5 "4 фотки 1 слово" solid ellipse black lightgrey
+node "Бесконечное лето" 25.113 0.25 5.3212 0.5 "Бесконечное лето" solid ellipse black lightgrey
+node "Рандеву с незнакомкой" 31.752 0.25 7.4639 0.5 "Рандеву с незнакомкой" solid ellipse black lightgrey
+node "Heroes of Might and Magic" 37.377 0.25 3.2862 0.5 "Heroes of Might and Magic" solid ellipse black lightgrey
+node "King's Bounty" 40.21 0.25 1.8936 0.5 "King's Bounty" solid ellipse black lightgrey
+node "Heroes II" 42.057 0.25 1.3118 0.5 "Heroes II" solid ellipse black lightgrey
+node "Pocket Heroes" 43.89 0.25 1.8632 0.5 "Pocket Heroes" solid ellipse black lightgrey
+node "Quest of the Hero" 46.182 0.25 2.2208 0.5 "Quest of the Hero" solid ellipse black lightgrey
+node "The Path" 48.182 0.25 1.2676 0.5 "The Path" solid ellipse black lightgrey
+node "Dear Esther" 49.863 0.25 1.58 0.5 "Dear Esther" solid ellipse black lightgrey
+node Journey 51.474 0.25 1.1558 0.5 Journey solid ellipse black lightgrey
+node "The Stanley Parable" 53.529 0.25 2.4667 0.5 "The Stanley Parable" solid ellipse black lightgrey
+node "Gone Home" 55.821 0.25 1.6101 0.5 "Gone Home" solid ellipse black lightgrey
+node Fibrillation 57.627 0.25 1.5137 0.5 Fibrillation solid ellipse black lightgrey
+node Pacman 59.21 0.25 1.1557 0.5 Pacman solid ellipse black lightgrey
+node "Lode Runner" 60.89 0.25 1.7145 0.5 "Lode Runner" solid ellipse black lightgrey
+node Bomberman 62.807 0.25 1.6326 0.5 Bomberman solid ellipse black lightgrey
+node Outlast 64.418 0.25 1.0814 0.5 Outlast solid ellipse black lightgrey
+node "Alien: Isolation" 66.196 0.25 1.9828 0.5 "Alien: Isolation" solid ellipse black lightgrey
+node Penumbra 68.14 0.25 1.3942 0.5 Penumbra solid ellipse black lightgrey
+node "Resident Evil" 69.974 0.25 1.7594 0.5 "Resident Evil" solid ellipse black lightgrey
+node "Silent Hill" 71.807 0.25 1.4169 0.5 "Silent Hill" solid ellipse black lightgrey
+node "Amnesia: The Dark Descent" 74.446 0.25 3.3529 0.5 "Amnesia: The Dark Descent" solid ellipse black lightgrey
+node SOMA 76.918 0.25 1.0814 0.5 SOMA solid ellipse black lightgrey
+node "Dead Space 2" 78.599 0.25 1.7812 0.5 "Dead Space 2" solid ellipse black lightgrey
+node Condemned 80.543 0.25 1.6029 0.5 Condemned solid ellipse black lightgrey
+node "Dead Space" 82.39 0.25 1.58 0.5 "Dead Space" solid ellipse black lightgrey
+node "Alan Wake" 84.196 0.25 1.5205 0.5 "Alan Wake" solid ellipse black lightgrey
+node "Call of Duty" 86.029 0.25 1.6476 0.5 "Call of Duty" solid ellipse black lightgrey
+node "Medal of Honor" 88.127 0.25 2.0347 0.5 "Medal of Honor" solid ellipse black lightgrey
+node Crysis 89.89 0.25 0.99208 0.5 Crysis solid ellipse black lightgrey
+node "Far Cry" 91.21 0.25 1.1334 0.5 "Far Cry" solid ellipse black lightgrey
+node Battlefield 92.752 0.25 1.4388 0.5 Battlefield solid ellipse black lightgrey
+node DOOM 94.279 0.25 1.126 0.5 DOOM solid ellipse black lightgrey
+node Wolfenstein 95.904 0.25 1.6176 0.5 Wolfenstein solid ellipse black lightgrey
+node Bulletstorm 97.752 0.25 1.5733 0.5 Bulletstorm solid ellipse black lightgrey
+node Quake 99.293 0.25 1.0066 0.5 Quake solid ellipse black lightgrey
+node "Championship Manager" 101.49 0.25 2.8917 0.5 "Championship Manager" solid ellipse black lightgrey
+node "World Soccer Winning Eleven" 104.99 0.25 3.6064 0.5 "World Soccer Winning Eleven" solid ellipse black lightgrey
+node "Pro Evolution Soccer" 108.33 0.25 2.6011 0.5 "Pro Evolution Soccer" solid ellipse black lightgrey
+node FIFA 110.33 0.25 0.88776 0.5 FIFA solid ellipse black lightgrey
+node "Worldwide Soccer Manager" 112.7 0.25 3.3304 0.5 "Worldwide Soccer Manager" solid ellipse black lightgrey
+node NBA 115.04 0.25 0.87276 0.5 NBA solid ellipse black lightgrey
+node NHL 116.15 0.25 0.85774 0.5 NHL solid ellipse black lightgrey
+node "IL-2 Sturmovik" 117.82 0.25 1.9829 0.5 "IL-2 Sturmovik" solid ellipse black lightgrey
+node "Silent Hunter" 119.93 0.25 1.7444 0.5 "Silent Hunter" solid ellipse black lightgrey
+node Freelancer 121.78 0.25 1.4383 0.5 Freelancer solid ellipse black lightgrey
+node "Flight Simulator" 123.78 0.25 2.0727 0.5 "Flight Simulator" solid ellipse black lightgrey
+node "The Sims" 125.72 0.25 1.3274 0.5 "The Sims" solid ellipse black lightgrey
+node Singles 127.18 0.25 1.0964 0.5 Singles solid ellipse black lightgrey
+node Spore 128.45 0.25 0.93231 0.5 Spore solid ellipse black lightgrey
+node SimCity 129.77 0.25 1.201 0.5 SimCity solid ellipse black lightgrey
+node Caesar 131.14 0.25 1.0363 0.5 Caesar solid ellipse black lightgrey
+node "Immortal Cities" 134.4 0.25 1.9978 0.5 "Immortal Cities" solid ellipse black lightgrey
+node "Glory of the Roman Empire" 137.31 0.25 3.3162 0.5 "Glory of the Roman Empire" solid ellipse black lightgrey
+node "Shogun: Total War" 139.92 0.25 1.4014 0.5 "Shogun: Total War" solid ellipse black lightgrey
+node "Company of Heroes" 142.1 0.25 2.4668 0.5 "Company of Heroes" solid ellipse black lightgrey
+node "X-COM: UFO Defense" 144.14 0.25 1.1112 0.5 "X-COM: UFO Defense" solid ellipse black lightgrey
+node "Warhammer Online: Age of Reckoning" 145.77 0.25 1.6471 0.5 "Warhammer Online: Age of Reckoning" solid ellipse black lightgrey
+node "Commandos: Behind Enemy Lines" 147.67 0.25 1.6627 0.5 "Commandos: Behind Enemy Lines" solid ellipse black lightgrey
+node Transistor 149.45 0.25 1.3941 0.5 Transistor solid ellipse black lightgrey
+node "Silent Storm" 151.22 0.25 1.6553 0.5 "Silent Storm" solid ellipse black lightgrey
+node "Valkyria Chronicles" 153.54 0.25 2.4742 0.5 "Valkyria Chronicles" solid ellipse black lightgrey
+node "Jagged Alliance" 156.04 0.25 2.0271 0.5 "Jagged Alliance" solid ellipse black lightgrey
+node "The Banner Saga" 158.39 0.25 2.1538 0.5 "The Banner Saga" solid ellipse black lightgrey
+node Wasteland 160.43 0.25 1.4387 0.5 Wasteland solid ellipse black lightgrey
+node "Desperados: Wanted Dead or Alive" 162.18 0.25 1.5578 0.5 "Desperados: Wanted Dead or Alive" solid ellipse black lightgrey
+node Blackguards 164.03 0.25 1.6474 0.5 Blackguards solid ellipse black lightgrey
+node "Chess Ultra" 165.57 0.25 0.94731 0.5 "Chess Ultra" solid ellipse black lightgrey
+node "Tetris Ultimate" 166.77 0.25 0.93223 0.5 "Tetris Ultimate" solid ellipse black lightgrey
+node Bejeweled 168.2 0.25 1.4386 0.5 Bejeweled solid ellipse black lightgrey
+node "Планета самоцветов" 172.1 0.25 5.8727 0.5 "Планета самоцветов" solid ellipse black lightgrey
+edge "Компьютерные игры" "Ролевая игра с открытым миром" 4 81.282 6.1705 76.196 5.996 64.029 5.5784 57.987 5.3711 solid black
+edge "Компьютерные игры" "Боевик с открытым миром" 4 83.599 5.9977 83.599 5.8472 83.599 5.6568 83.599 5.5057 solid black
+edge "Компьютерные игры" "Глобальна стратегия" 4 85.798 6.1423 89.629 5.9546 97.501 5.5691 101.53 5.3719 solid black
+edge "Ролевая игра с открытым миром" Ролевая 4 51.633 5.0718 48.14 4.8515 42.349 4.4864 39.831 4.3277 solid black
+edge "Боевик с открытым миром" Боевик 4 83.599 4.9977 83.599 4.8472 83.599 4.6568 83.599 4.5057 solid black
+edge "Глобальна стратегия" Стратегия 4 106.63 5.1498 112.12 4.9388 124.72 4.4555 128.78 4.2995 solid black
+edge Ролевая "Сетевая текстовая" 4 37.34 4.1923 33.76 4.0281 23.487 3.557 18.969 3.3498 solid black
+edge Ролевая "Сетевая ролевая" 4 38.599 3.9977 38.599 3.8472 38.599 3.6568 38.599 3.5057 solid black
+edge Боевик Сражения 4 82.513 4.1314 80.796 3.9438 77.467 3.58 75.669 3.3836 solid black
+edge Боевик "Боевая гонка" 4 84.685 4.1314 86.299 3.9549 89.341 3.6226 91.193 3.4202 solid black
+edge Стратегия "Непрямого контроля" 4 130.07 3.9977 130.07 3.8472 130.07 3.6568 130.07 3.5057 solid black
+edge Стратегия "Глобальная военная" 4 131.34 4.1809 134.31 4.0186 141.79 3.6104 145.78 3.3924 solid black
+edge "Сетевая текстовая" Пазл 4 15.391 3.0476 13.961 2.8413 11.794 2.5287 10.644 2.3628 solid black
+edge "Сетевая текстовая" Квест 4 16.793 2.9977 16.793 2.8472 16.793 2.6568 16.793 2.5057 solid black
+edge "Сетевая ролевая" Браузерная 4 37.789 3.0168 37.214 2.8512 36.447 2.6303 35.884 2.4681 solid black
+edge "Сетевая ролевая" Приключения 4 39.41 3.0155 39.973 2.8528 40.719 2.637 41.275 2.4761 solid black
+edge Сражения Платформер 4 73.257 3.1078 71.688 2.9201 68.938 2.5913 67.338 2.3999 solid black
+edge Сражения Скрытность 4 74.446 2.9977 74.446 2.8472 74.446 2.6568 74.446 2.5057 solid black
+edge "Боевая гонка" Поединок 4 92.752 2.9977 92.752 2.8472 92.752 2.6568 92.752 2.5057 solid black
+edge "Боевая гонка" Гонка 4 94.667 3.1411 98.356 2.9313 106.34 2.4771 109.25 2.3118 solid black
+edge "Непрямого контроля" Экономическая 4 129.52 3.0028 129.18 2.8478 128.73 2.6488 128.39 2.4943 solid black
+edge "Непрямого контроля" Башни 4 130.44 3.0002 130.66 2.8429 130.96 2.641 131.18 2.4863 solid black
+edge "Глобальная военная" Военная 4 148.39 2.9977 148.39 2.8472 148.39 2.6568 148.39 2.5057 solid black
+edge "Глобальная военная" Карточная 4 150.81 3.0882 154.02 2.8736 159.56 2.5025 162.06 2.3356 solid black
+edge Пазл Учебная 4 9.1482 2.1067 8.2596 1.9285 6.7419 1.6241 5.7752 1.4302 solid black
+edge Квест Вопросы 4 16.793 1.9977 16.793 1.8472 16.793 1.6568 16.793 1.5057 solid black
+edge Браузерная Общение 4 34.386 2.0305 33.817 1.8621 33.037 1.6308 32.473 1.4638 solid black
+edge Приключения Геройская 4 42.057 1.9977 42.057 1.8472 42.057 1.6568 42.057 1.5057 solid black
+edge Приключения Путешествия 4 43.477 2.0992 45.319 1.9036 48.502 1.5656 50.245 1.3805 solid black
+edge Платформер Аркада 4 65.207 2.0428 64.441 1.862 63.342 1.6024 62.612 1.4301 solid black
+edge Скрытность Хоррор 4 74.446 1.9977 74.446 1.8472 74.446 1.6568 74.446 1.5057 solid black
+edge Поединок Стрелялка 4 92.752 1.9977 92.752 1.8472 92.752 1.6568 92.752 1.5057 solid black
+edge Гонка Спорт 4 110.33 1.9977 110.33 1.8472 110.33 1.6568 110.33 1.5057 solid black
+edge Гонка Симулятор 4 111.35 2.1439 113.13 1.9586 116.8 1.5765 118.71 1.3772 solid black
+edge Экономическая Сим 4 127.74 1.9977 127.67 1.8449 127.58 1.6509 127.51 1.4988 solid black
+edge Башни Строительная 4 131.75 2.0028 131.88 1.8501 132.06 1.6547 132.19 1.5013 solid black
+edge Военная Полководческая 4 147.38 2.0712 146.42 1.901 144.97 1.6446 143.95 1.4637 solid black
+edge Военная Тактическая 4 149.03 2.0256 149.49 1.8632 150.11 1.6444 150.57 1.4806 solid black
+edge Карточная Логическая 4 164.06 2.0379 164.63 1.8711 165.43 1.6394 166.01 1.4704 solid black
+edge Учебная Кубики 4 4.1159 1.0464 3.4588 0.87054 2.5155 0.61806 1.8681 0.44478 solid black
+edge Учебная "Большие продажи" 4 4.8765 0.99766 4.8765 0.84722 4.8765 0.65677 4.8765 0.50574 solid black
+edge Вопросы "Кто хочет стать миллионером?" 4 15.958 1.0981 15.062 0.9353 13.629 0.6747 12.587 0.4853 solid black
+edge Вопросы "Поле чудес" 4 16.793 0.99766 16.793 0.84722 16.793 0.65677 16.793 0.50574 solid black
+edge Вопросы "4 фотки 1 слово" 4 17.472 1.0584 18.06 0.89221 18.913 0.65149 19.535 0.47597 solid black
+edge Общение "Бесконечное лето" 4 30.692 1.0904 29.563 0.92033 27.769 0.65009 26.521 0.46214 solid black
+edge Общение "Рандеву с незнакомкой" 4 31.752 0.99766 31.752 0.84722 31.752 0.65677 31.752 0.50574 solid black
+edge Геройская "Heroes of Might and Magic" 4 41.155 1.0572 40.344 0.88409 39.159 0.63078 38.333 0.45425 solid black
+edge Геройская "King's Bounty" 4 41.615 1.0105 41.316 0.84869 40.924 0.63642 40.63 0.47727 solid black
+edge Геройская "Heroes II" 4 42.057 0.99766 42.057 0.84722 42.057 0.65677 42.057 0.50574 solid black
+edge Геройская "Pocket Heroes" 4 42.496 1.0105 42.793 0.84869 43.182 0.63642 43.474 0.47727 solid black
+edge Геройская "Quest of the Hero" 4 42.892 1.0476 43.633 0.86786 44.708 0.60738 45.425 0.43354 solid black
+edge Путешествия "The Path" 7 50.731 1.0355 50.226 0.88841 49.545 0.68674 48.946 0.5 48.857 0.47216 48.762 0.44177 48.67 0.41207 solid black
+edge Путешествия "Dear Esther" 4 51.084 1.0079 50.821 0.84492 50.477 0.63155 50.221 0.47275 solid black
+edge Путешествия Journey 4 51.474 0.99766 51.474 0.84722 51.474 0.65677 51.474 0.50574 solid black
+edge Путешествия "The Stanley Parable" 4 51.961 1.013 52.291 0.85245 52.725 0.6413 53.053 0.48184 solid black
+edge Путешествия "Gone Home" 7 52.401 1.0586 53.09 0.91351 54.051 0.70473 54.89 0.5 54.996 0.47423 55.108 0.44543 55.216 0.4168 solid black
+edge Путешествия Fibrillation 7 52.714 1.1224 53.789 1.0003 55.382 0.79143 56.752 0.5 56.855 0.47796 56.964 0.45034 57.069 0.42155 solid black
+edge Аркада Pacman 4 61.283 1.0355 60.792 0.84953 60.092 0.58438 59.645 0.41473 solid black
+edge Аркада "Lode Runner" 4 61.612 1.0028 61.462 0.84665 61.27 0.64584 61.121 0.4909 solid black
+edge Аркада Bomberman 4 62.086 1.0028 62.235 0.84665 62.428 0.64584 62.576 0.4909 solid black
+edge Хоррор Outlast 7 73.564 1.2107 71.555 1.1162 66.686 0.857 65.085 0.5 64.997 0.48036 64.905 0.4516 64.818 0.42051 solid black
+edge Хоррор "Alien: Isolation" 7 73.575 1.1904 72.228 1.0911 69.561 0.86562 67.321 0.5 67.191 0.47873 67.053 0.45181 66.92 0.42357 solid black
+edge Хоррор Penumbra 7 73.595 1.1747 72.513 1.0695 70.59 0.85102 68.974 0.5 68.87 0.47756 68.761 0.4487 68.657 0.41861 solid black
+edge Хоррор "Resident Evil" 7 73.726 1.1016 73.023 0.95494 71.923 0.72106 70.974 0.5 70.862 0.47402 70.744 0.4454 70.629 0.41709 solid black
+edge Хоррор "Silent Hill" 4 73.912 1.0476 73.438 0.86786 72.75 0.60738 72.291 0.43354 solid black
+edge Хоррор "Amnesia: The Dark Descent" 4 74.446 0.99766 74.446 0.84722 74.446 0.65677 74.446 0.50574 solid black
+edge Хоррор SOMA 4 74.958 1.0428 75.418 0.85687 76.084 0.58755 76.509 0.41561 solid black
+edge Хоррор "Dead Space 2" 7 75.132 1.0876 75.768 0.9366 76.741 0.70487 77.585 0.5 77.696 0.47306 77.814 0.44423 77.928 0.41609 solid black
+edge Хоррор Condemned 7 75.279 1.1598 76.305 1.0418 78.097 0.81249 79.613 0.5 79.722 0.47737 79.838 0.44946 79.95 0.42059 solid black
+edge Хоррор "Dead Space" 7 75.324 1.2016 76.66 1.1176 79.282 0.91304 81.474 0.5 81.584 0.47923 81.7 0.45185 81.812 0.42284 solid black
+edge Хоррор "Alan Wake" 7 75.34 1.2303 76.947 1.1825 80.425 1.0225 83.307 0.5 83.417 0.47999 83.534 0.45223 83.645 0.42245 solid black
+edge Стрелялка "Call of Duty" 7 91.462 1.1291 90.289 1.0081 88.513 0.79698 86.988 0.5 86.873 0.47766 86.751 0.44954 86.635 0.4203 solid black
+edge Стрелялка "Medal of Honor" 7 91.837 1.0544 91.134 0.9037 90.138 0.68965 89.265 0.5 89.143 0.47335 89.013 0.44494 88.886 0.41719 solid black
+edge Стрелялка Crysis 7 92.058 1.0286 91.615 0.88436 91.029 0.6885 90.515 0.5 90.439 0.47179 90.357 0.44032 90.279 0.40947 solid black
+edge Стрелялка "Far Cry" 4 92.378 1.0079 92.12 0.8403 91.779 0.61941 91.533 0.45937 solid black
+edge Стрелялка Battlefield 4 92.752 0.99766 92.752 0.84722 92.752 0.65677 92.752 0.50574 solid black
+edge Стрелялка DOOM 4 93.121 1.0079 93.377 0.8403 93.715 0.61941 93.959 0.45937 solid black
+edge Стрелялка Wolfenstein 4 93.447 1.0293 94.015 0.84928 94.807 0.59812 95.337 0.43008 solid black
+edge Стрелялка Bulletstorm 7 93.823 1.0787 94.649 0.94044 95.819 0.7313 96.835 0.5 96.943 0.47546 97.057 0.44663 97.167 0.41746 solid black
+edge Стрелялка Quake 7 94.151 1.1732 95.362 1.083 97.152 0.89245 98.668 0.5 98.75 0.47891 98.835 0.44991 98.915 0.41912 solid black
+edge Спорт "Championship Manager" 7 109.54 1.1823 108.19 1.0652 105.41 0.80786 103.06 0.5 102.89 0.47759 102.71 0.45122 102.53 0.42416 solid black
+edge Спорт "World Soccer Winning Eleven" 4 109.63 1.1182 108.72 0.94799 107.13 0.64994 106.06 0.45126 solid black
+edge Спорт "Pro Evolution Soccer" 4 109.91 1.0355 109.58 0.87306 109.14 0.65022 108.8 0.48337 solid black
+edge Спорт FIFA 4 110.33 0.99766 110.33 0.84722 110.33 0.65677 110.33 0.50574 solid black
+edge Спорт "Worldwide Soccer Manager" 4 110.82 1.0452 111.2 0.88294 111.74 0.65602 112.14 0.4861 solid black
+edge Спорт NBA 7 111.12 1.1665 111.96 1.063 113.34 0.85541 114.49 0.5 114.56 0.47681 114.64 0.44614 114.71 0.41425 solid black
+edge Спорт NHL 7 111.15 1.2048 112.2 1.1309 114.06 0.94469 115.6 0.5 115.67 0.47821 115.75 0.44812 115.83 0.41636 solid black
+edge Симулятор "IL-2 Sturmovik" 4 119.44 1.0155 119.09 0.85102 118.63 0.63245 118.29 0.47099 solid black
+edge Симулятор "Silent Hunter" 4 119.93 0.99766 119.93 0.84722 119.93 0.65677 119.93 0.50574 solid black
+edge Симулятор Freelancer 4 120.37 1.0105 120.68 0.84291 121.09 0.62119 121.39 0.46042 solid black
+edge Симулятор "Flight Simulator" 4 120.73 1.0428 121.42 0.86317 122.41 0.60568 123.07 0.4334 solid black
+edge Сим "The Sims" 4 127.03 1.0281 126.75 0.86005 126.36 0.63061 126.08 0.46445 solid black
+edge Сим Singles 4 127.35 0.99766 127.31 0.84491 127.27 0.6509 127.24 0.4988 solid black
+edge Сим Spore 4 127.66 1.0079 127.83 0.84377 128.05 0.62852 128.22 0.46938 solid black
+edge Строительная SimCity 4 131.79 1.013 131.3 0.82993 130.64 0.58106 130.21 0.41806 solid black
+edge Строительная Caesar 4 132.1 1.0028 131.89 0.83739 131.62 0.62188 131.41 0.46385 solid black
+edge Строительная "Immortal Cities" 4 132.9 1.0079 133.22 0.84608 133.64 0.63458 133.96 0.47613 solid black
+edge Строительная "Glory of the Roman Empire" 4 133.44 1.0416 134.29 0.86815 135.48 0.62276 136.32 0.45132 solid black
+edge Полководческая "Shogun: Total War" 4 142.06 1.0105 141.56 0.83077 140.87 0.5888 140.42 0.4265 solid black
+edge Тактическая "Company of Heroes" 7 149.7 1.1413 148.13 1.0205 145.62 0.80179 143.46 0.5 143.31 0.47853 143.14 0.45201 142.99 0.42435 solid black
+edge Тактическая X-COM: UFO Defense 7 149.62 1.1671 148.31 1.0745 146.43 0.88395 144.82 0.5 144.73 0.47896 144.64 0.44998 144.55 0.41919 solid black
+edge Тактическая Warhammer Online: Age of Reckoning 7 149.99 1.0773 149.08 0.94187 147.81 0.73704 146.71 0.5 146.6 0.47648 146.48 0.44847 146.37 0.41984 solid black
+edge Тактическая "Commandos: Behind Enemy Lines" 4 150.43 1.0281 149.78 0.84509 148.87 0.58926 148.28 0.42166 solid black
+edge Тактическая Transistor 4 150.79 1.0079 150.5 0.84145 150.11 0.62245 149.82 0.46269 solid black
+edge Тактическая "Silent Storm" 4 151.22 0.99766 151.22 0.84722 151.22 0.65677 151.22 0.50574 solid black
+edge Тактическая "Valkyria Chronicles" 4 151.77 1.013 152.15 0.85072 152.65 0.63674 153.02 0.47669 solid black
+edge Тактическая "Jagged Alliance" 7 152.23 1.0488 152.97 0.90004 154 0.69105 154.9 0.5 155.03 0.47401 155.16 0.44595 155.28 0.41834 solid black
+edge Тактическая "The Banner Saga" 7 152.61 1.1065 153.82 0.97399 155.62 0.75884 157.18 0.5 157.32 0.47718 157.46 0.44983 157.61 0.42173 solid black
+edge Тактическая Wasteland 7 152.88 1.2002 154.58 1.1262 157.29 0.94407 159.6 0.5 159.7 0.48028 159.81 0.45302 159.91 0.42373 solid black
+edge Тактическая "Desperados: Wanted Dead or Alive" 7 152.83 1.1688 155.24 1.0399 159.7 0.77463 161.28 0.5 161.39 0.48076 161.51 0.45373 161.62 0.42451 solid black
+edge Тактическая Blackguards 7 152.86 1.1861 155.64 1.071 161.17 0.81167 163.08 0.5 163.2 0.48124 163.32 0.45444 163.44 0.42528 solid black
+edge Логическая "Chess Ultra" 4 166.47 1.0028 166.27 0.83739 166.02 0.62188 165.83 0.46385 solid black
+edge Логическая "Tetris Ultimate" 4 166.77 0.99766 166.77 0.84722 166.77 0.65677 166.77 0.50574 solid black
+edge Логическая Bejeweled 4 167.12 1.0054 167.35 0.84347 167.65 0.63274 167.87 0.475 solid black
+edge Логическая "Планета самоцветов" 4 167.79 1.0572 168.68 0.89175 169.95 0.65304 170.88 0.47813 solid black
