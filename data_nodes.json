@@ -1,0 +1,582 @@
+[
+    {
+        "id": 0,
+        "title": "Компьютерные игры",
+        "parent": null
+    },
+    {
+        "id": 1,
+        "title": "Ролевая игра с открытым миром",
+        "parent": 0
+    },
+    {
+        "id": 2,
+        "title": "Боевик с открытым миром",
+        "parent": 0
+    },
+    {
+        "id": 3,
+        "title": "Глобальна стратегия",
+        "parent": 0
+    },
+    {
+        "id": 4,
+        "title": "Ролевая",
+        "parent": 1
+    },
+    {
+        "id": 5,
+        "title": "Боевик",
+        "parent": 2
+    },
+    {
+        "id": 6,
+        "title": "Стратегия",
+        "parent": 3
+    },
+    {
+        "id": 7,
+        "title": "Сетевая текстовая",
+        "parent": 4
+    },
+    {
+        "id": 8,
+        "title": "Сетевая ролевая",
+        "parent": 4
+    },
+    {
+        "id": 9,
+        "title": "Сражения",
+        "parent": 5
+    },
+    {
+        "id": 10,
+        "title": "Боевая гонка",
+        "parent": 5
+    },
+    {
+        "id": 11,
+        "title": "Непрямого контроля",
+        "parent": 6
+    },
+    {
+        "id": 12,
+        "title": "Глобальная военная",
+        "parent": 6
+    },
+    {
+        "id": 13,
+        "title": "Пазл",
+        "parent": 7
+    },
+    {
+        "id": 14,
+        "title": "Квест",
+        "parent": 7
+    },
+    {
+        "id": 15,
+        "title": "Браузерная",
+        "parent": 8
+    },
+    {
+        "id": 16,
+        "title": "Приключения",
+        "parent": 8
+    },
+    {
+        "id": 17,
+        "title": "Платформер",
+        "parent": 9
+    },
+    {
+        "id": 18,
+        "title": "Скрытность",
+        "parent": 9
+    },
+    {
+        "id": 19,
+        "title": "Поединок",
+        "parent": 10
+    },
+    {
+        "id": 20,
+        "title": "Гонка",
+        "parent": 10
+    },
+    {
+        "id": 21,
+        "title": "Экономическая",
+        "parent": 11
+    },
+    {
+        "id": 22,
+        "title": "Башни",
+        "parent": 11
+    },
+    {
+        "id": 23,
+        "title": "Военная",
+        "parent": 12
+    },
+    {
+        "id": 24,
+        "title": "Карточная",
+        "parent": 12
+    },
+    {
+        "id": 25,
+        "title": "Учебная",
+        "parent": 13
+    },
+    {
+        "id": 26,
+        "title": "Вопросы",
+        "parent": 14
+    },
+    {
+        "id": 27,
+        "title": "Общение",
+        "parent": 15
+    },
+    {
+        "id": 28,
+        "title": "Геройская",
+        "parent": 16
+    },
+    {
+        "id": 29,
+        "title": "Путешествия",
+        "parent": 16
+    },
+    {
+        "id": 30,
+        "title": "Аркада",
+        "parent": 17
+    },
+    {
+        "id": 31,
+        "title": "Хоррор",
+        "parent": 18
+    },
+    {
+        "id": 32,
+        "title": "Стрелялка",
+        "parent": 19
+    },
+    {
+        "id": 33,
+        "title": "Спорт",
+        "parent": 20
+    },
+    {
+        "id": 34,
+        "title": "Симулятор",
+        "parent": 20
+    },
+    {
+        "id": 35,
+        "title": "Сим",
+        "parent": 21
+    },
+    {
+        "id": 36,
+        "title": "Строительная",
+        "parent": 22
+    },
+    {
+        "id": 37,
+        "title": "Полководческая",
+        "parent": 23
+    },
+    {
+        "id": 38,
+        "title": "Тактическая",
+        "parent": 23
+    },
+    {
+        "id": 39,
+        "title": "Логическая",
+        "parent": 24
+    },
+    {
+        "id": 40,
+        "title": "Кубики",
+        "parent": 25
+    },
+    {
+        "id": 41,
+        "title": "Большие продажи",
+        "parent": 25
+    },
+    {
+        "id": 42,
+        "title": "Кто хочет стать миллионером?",
+        "parent": 26
+    },
+    {
+        "id": 43,
+        "title": "Поле чудес",
+        "parent": 26
+    },
+    {
+        "id": 44,
+        "title": "4 фотки 1 слово",
+        "parent": 26
+    },
+    {
+        "id": 45,
+        "title": "Бесконечное лето",
+        "parent": 27
+    },
+    {
+        "id": 46,
+        "title": "Рандеву с незнакомкой",
+        "parent": 27
+    },
+    {
+        "id": 47,
+        "title": "Heroes of Might and Magic",
+        "parent": 28
+    },
+    {
+        "id": 48,
+        "title": "King's Bounty",
+        "parent": 28
+    },
+    {
+        "id": 49,
+        "title": "Heroes II",
+        "parent": 28
+    },
+    {
+        "id": 50,
+        "title": "Pocket Heroes",
+        "parent": 28
+    },
+    {
+        "id": 51,
+        "title": "Quest of the Hero",
+        "parent": 28
+    },
+    {
+        "id": 52,
+        "title": "The Path",
+        "parent": 29
+    },
+    {
+        "id": 53,
+        "title": "Dear Esther",
+        "parent": 29
+    },
+    {
+        "id": 54,
+        "title": "Journey",
+        "parent": 29
+    },
+    {
+        "id": 55,
+        "title": "The Stanley Parable",
+        "parent": 29
+    },
+    {
+        "id": 56,
+        "title": "Gone Home",
+        "parent": 29
+    },
+    {
+        "id": 57,
+        "title": "Fibrillation",
+        "parent": 29
+    },
+    {
+        "id": 58,
+        "title": "Pacman",
+        "parent": 30
+    },
+    {
+        "id": 59,
+        "title": "Lode Runner",
+        "parent": 30
+    },
+    {
+        "id": 60,
+        "title": "Bomberman",
+        "parent": 30
+    },
+    {
+        "id": 61,
+        "title": "Outlast",
+        "parent": 31
+    },
+    {
+        "id": 62,
+        "title": "Alien: Isolation",
+        "parent": 31
+    },
+    {
+        "id": 63,
+        "title": "Penumbra",
+        "parent": 31
+    },
+    {
+        "id": 64,
+        "title": "Resident Evil",
+        "parent": 31
+    },
+    {
+        "id": 65,
+        "title": "Silent Hill",
+        "parent": 31
+    },
+    {
+        "id": 66,
+        "title": "Amnesia: The Dark Descent",
+        "parent": 31
+    },
+    {
+        "id": 67,
+        "title": "SOMA",
+        "parent": 31
+    },
+    {
+        "id": 68,
+        "title": "Dead Space 2",
+        "parent": 31
+    },
+    {
+        "id": 69,
+        "title": "Condemned",
+        "parent": 31
+    },
+    {
+        "id": 70,
+        "title": "Dead Space",
+        "parent": 31
+    },
+    {
+        "id": 71,
+        "title": "Alan Wake",
+        "parent": 31
+    },
+    {
+        "id": 72,
+        "title": "Call of Duty",
+        "parent": 32
+    },
+    {
+        "id": 73,
+        "title": "Medal of Honor",
+        "parent": 32
+    },
+    {
+        "id": 74,
+        "title": "Crysis",
+        "parent": 32
+    },
+    {
+        "id": 75,
+        "title": "Far Cry",
+        "parent": 32
+    },
+    {
+        "id": 76,
+        "title": "Battlefield",
+        "parent": 32
+    },
+    {
+        "id": 77,
+        "title": "DOOM",
+        "parent": 32
+    },
+    {
+        "id": 78,
+        "title": "Wolfenstein",
+        "parent": 32
+    },
+    {
+        "id": 79,
+        "title": "Bulletstorm",
+        "parent": 32
+    },
+    {
+        "id": 80,
+        "title": "Quake",
+        "parent": 32
+    },
+    {
+        "id": 81,
+        "title": "Championship Manager",
+        "parent": 33
+    },
+    {
+        "id": 82,
+        "title": "World Soccer Winning Eleven",
+        "parent": 33
+    },
+    {
+        "id": 83,
+        "title": "Pro Evolution Soccer",
+        "parent": 33
+    },
+    {
+        "id": 84,
+        "title": "FIFA",
+        "parent": 33
+    },
+    {
+        "id": 85,
+        "title": "Worldwide Soccer Manager",
+        "parent": 33
+    },
+    {
+        "id": 86,
+        "title": "NBA",
+        "parent": 33
+    },
+    {
+        "id": 87,
+        "title": "NHL",
+        "parent": 33
+    },
+    {
+        "id": 88,
+        "title": "IL-2 Sturmovik",
+        "parent": 34
+    },
+    {
+        "id": 89,
+        "title": "Silent Hunter",
+        "parent": 34
+    },
+    {
+        "id": 90,
+        "title": "Freelancer",
+        "parent": 34
+    },
+    {
+        "id": 91,
+        "title": "Flight Simulator",
+        "parent": 34
+    },
+    {
+        "id": 92,
+        "title": "The Sims",
+        "parent": 35
+    },
+    {
+        "id": 93,
+        "title": "Singles",
+        "parent": 35
+    },
+    {
+        "id": 94,
+        "title": "Spore",
+        "parent": 35
+    },
+    {
+        "id": 95,
+        "title": "SimCity",
+        "parent": 36
+    },
+    {
+        "id": 96,
+        "title": "Caesar",
+        "parent": 36
+    },
+    {
+        "id": 97,
+        "title": "Immortal Cities",
+        "parent": 36
+    },
+    {
+        "id": 98,
+        "title": "Glory of the Roman Empire",
+        "parent": 36
+    },
+    {
+        "id": 99,
+        "title": "Shogun: Total War",
+        "parent": 37
+    },
+    {
+        "id": 100,
+        "title": "Company of Heroes",
+        "parent": 38
+    },
+    {
+        "id": 101,
+        "title": "X-COM:",
+        "parent": 38
+    },
+    {
+        "id": 102,
+        "title": "Warhammer",
+        "parent": 38
+    },
+    {
+        "id": 103,
+        "title": "Commandos: Behind Enemy Lines",
+        "parent": 38
+    },
+    {
+        "id": 104,
+        "title": "Transistor",
+        "parent": 38
+    },
+    {
+        "id": 105,
+        "title": "Silent Storm",
+        "parent": 38
+    },
+    {
+        "id": 106,
+        "title": "Valkyria Chronicles",
+        "parent": 38
+    },
+    {
+        "id": 107,
+        "title": "Jagged Alliance",
+        "parent": 38
+    },
+    {
+        "id": 108,
+        "title": "The Banner Saga",
+        "parent": 38
+    },
+    {
+        "id": 109,
+        "title": "Wasteland",
+        "parent": 38
+    },
+    {
+        "id": 110,
+        "title": "Desperados: Wanted Dead or Alive",
+        "parent": 38
+    },
+    {
+        "id": 111,
+        "title": "Blackguards",
+        "parent": 38
+    },
+    {
+        "id": 112,
+        "title": "Chess Ultra",
+        "parent": 39
+    },
+    {
+        "id": 113,
+        "title": "Tetris Ultimate",
+        "parent": 39
+    },
+    {
+        "id": 114,
+        "title": "Bejeweled",
+        "parent": 39
+    },
+    {
+        "id": 115,
+        "title": "Планета самоцветов",
+        "parent": 39
+    }
+]
