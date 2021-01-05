@@ -33,8 +33,8 @@ const InputSection = (props: InputSectionProps) => {
         onChange={props.onChange}
       />
       <div className="animated-button">
-        {/* <span className={props.value ? 'icon-lock next' : 'icon-lock'}> */}
-        <span className="icon-lock next">
+        <span className={props.value ? 'icon-lock next' : 'icon-lock'}>
+          {/* <span className="icon-lock next"> */}
           <i className="fa fa-lock" />
         </span>
         <span className="next-button">
