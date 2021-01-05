@@ -2,11 +2,7 @@ import React, { RefObject, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './App.scss';
 
-import {
-  nameInput,
-  titleInput,
-  collaborativeFiltering,
-} from '../../store/signIn/actions';
+import { nameInput, titleInput, filtering } from '../../store/signIn/actions';
 import { AppState } from '../../store/reducers';
 import { push } from 'connected-react-router';
 
@@ -53,9 +49,7 @@ export const App: React.FC = () => {
   );
 
   const isError = useSelector((state: AppState) => state.signIn.error);
-  const collaborativeFilter = useSelector(
-    (state: AppState) => state.signIn.collaborativeFiltering
-  );
+  const filter = useSelector((state: AppState) => state.signIn.filtering);
 
   const [name, setName] = useState('');
   const [title, setTitle] = useState('');
@@ -82,7 +76,7 @@ export const App: React.FC = () => {
     } else if (nameStep === 'title') {
       dispatch(titleInput(title));
       setSuccess(true);
-      dispatch(collaborativeFiltering());
+      dispatch(filtering());
     }
 
     if (refName && refTitle) {
@@ -141,7 +135,7 @@ export const App: React.FC = () => {
   };
 
   const result = () => {
-    console.log(collaborativeFilter);
+    console.log(filter);
     return (
       <div className="registration-form">
         <header>
@@ -150,11 +144,11 @@ export const App: React.FC = () => {
         </header>
 
         <div className="content">
-          {collaborativeFilter.map((item, index) => {
+          {filter.map((item, index) => {
             return (
               <div className="part" key={index}>
-                <h3>Игра: {item[1]}</h3>
-                <p>Счет: {item[2]}</p>
+                <h3>Игра: {item[0]}</h3>
+                <p>Счет: {item[1]}</p>
               </div>
             );
           })}

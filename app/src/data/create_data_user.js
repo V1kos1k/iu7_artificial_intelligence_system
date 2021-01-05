@@ -67,15 +67,13 @@ function createData(count) {
     const arrName = creteListName(count)
     let arrRes = ['Name']
 
-    for (let i = 40 ; i <= 109; i++) {
-        arrRes.push(data[i].title)
-    }
-
+    arrRes = arrName.map(item => item)
+    arrRes.unshift('Game')
     arrRes = [arrRes.join(separator)]
 
-    for (let i = 0; i < arrName.length; i++) {
-        let arrStr = [arrName[i]]
-        for (let j = 0; j < 70; j++) {
+    for (let i = 40; i <= 109; i++) {
+        let arrStr = [data[i].title]
+        for (let j = 0; j < count; j++) {
             if (Math.random() * 5 < 4) arrStr.push(0)
             else arrStr.push((Math.random() * 5).toFixed(2))
         }

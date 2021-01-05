@@ -9,14 +9,13 @@ import { ProfileType } from '../../types/types';
 export const nameInputRequestAction: ActionCreator<types.signInFindName> = (
   name
 ) => {
-  const index = data.findIndex((element) => element.Name === name);
+  const data_keys = Object.keys(data[0]);
+  const index = data_keys.findIndex((element) => element === name);
 
   if (index !== -1)
     return {
       type: types.SignInActionTypes.INPUT_NAME_REQUEST,
       name: name,
-      index: index,
-      ratingGames: data[index],
     };
   else throw 'Not found';
 };
@@ -32,7 +31,6 @@ export const nameInput = (name: string) => {
   return async (dispatch: Dispatch) => {
     try {
       dispatch(nameInputRequestAction(name));
-      // dispatch(nameInputRequestAction('Betty Holiday'));
     } catch (error) {
       dispatch(nameInputFailureAction(error));
     }
@@ -40,13 +38,15 @@ export const nameInput = (name: string) => {
 };
 
 export const titleInputRequestAction: ActionCreator<types.signInFindTitle> = (
-  title,
-  ratingGames
+  title
 ) => {
-  if (ratingGames[title])
+  const index = data.findIndex((element) => element.Game === title);
+  if (index !== -1)
     return {
       type: types.SignInActionTypes.INPUT_TITLE_REQUEST,
       title: title,
+      ratingGames: data[index],
+      index,
     };
 
   throw 'Not found';
@@ -64,32 +64,19 @@ export const titleInput = (title: string) => {
     try {
       const profile = getState().signIn;
       dispatch(titleInputRequestAction(title, profile.ratingGames));
-      // dispatch(titleInputRequestAction('NBA', profile.ratingGames));
+      // dispatch(titleInputRequestAction('Crysis'));
     } catch (error) {
       dispatch(titleInputFailureAction(error));
     }
   };
 };
 
-export const collaborativeFilteringFailureAction: ActionCreator<types.collaborativeFilteringFailure> = (
+export const filteringFailureAction: ActionCreator<types.filteringFailure> = (
   error: RequestError
 ) => ({
-  type: types.SignInActionTypes.COLALABORATIVE_FILTERING_FAILURE,
-  collaborativeFiltering: error,
+  type: types.SignInActionTypes.FILTERING_FAILURE,
+  filtering: error,
 });
-
-// вместо этого используется коэффициент корреляции Пирсона
-const evklid = (item1: any, item2: any) => {
-  let sumEvklid = 0;
-
-  item1.forEach((item: any, index: number) => {
-    if (item[0] !== 'Name') {
-      sumEvklid += Math.pow(item[1] - item2[index][1], 2);
-    }
-  });
-
-  return sumEvklid;
-};
 
 const correlationPirson = (item1: [string, any][], item2: [string, any][]) => {
   let avg1 = 0,
@@ -100,7 +87,7 @@ const correlationPirson = (item1: [string, any][], item2: [string, any][]) => {
     count = item1.length - 1;
 
   item1.forEach((item: any, index: number) => {
-    if (item[0] !== 'Name') {
+    if (item[0] !== 'Game') {
       avg1 += item[1];
       avg2 += item2[index][1];
     }
@@ -109,7 +96,7 @@ const correlationPirson = (item1: [string, any][], item2: [string, any][]) => {
   avg1 /= count;
   avg2 /= count;
   item1.forEach((item: any, index: number) => {
-    if (item[0] !== 'Name') {
+    if (item[0] !== 'Game') {
       mul_numerator += (item[1] - avg1) * (item2[index][1] - avg2);
       den_numerator1 += Math.pow(item[1] - avg1, 2);
       den_numerator2 += Math.pow(item2[index][1] - avg2, 2);
@@ -122,104 +109,119 @@ const correlationPirson = (item1: [string, any][], item2: [string, any][]) => {
 };
 
 const correlation = (profile: ProfileType, ratingGames: [string, any][]) => {
-  console.log('PROFILE ', profile);
-
   const resultPirson = data.map((item, index) => {
     const entriesItem = Object.entries(item);
 
-    if (item.Name !== profile.name)
+    if (item.Game !== profile.title) {
       return [correlationPirson(entriesItem, ratingGames), index];
-    else return [0, index];
+    } else return [0, index];
   });
 
   // так как в корреляции пирсона отрицательные значения обозначают обратную зависимость
-  // в качестве результата берем все что больше 0 или максимальные 10 значений
-  return resultPirson.sort().slice(-5);
+  // в качестве результата берем все что больше 0
+  return resultPirson.filter((item) => item[0] > 0);
 };
 
-const multiplyingTheScoreByTheCoefficientPirson = (correlation: number[][]) => {
-  const multiplyingArray = correlation.map((item) => {
-    const entriesItem = Object.entries(data[item[1]]);
-    const arrayUserScore = entriesItem.map((element) => {
-      if (element[0] !== 'Name')
-        return [element[0], Number(element[1]) * item[0]];
-      else return ['Name', element[1]];
-    });
+const avgUserRating = () => {
+  const userLength = Object.keys(data[0]).length;
+  const gameLength = data.length;
+  let arrSum: number[] = Array(userLength).fill(0);
+  let arrCount: number[] = Array(userLength).fill(0);
 
-    return arrayUserScore;
-  });
+  for (let i = 0; i < gameLength; i++) {
+    const entriesUser = Object.entries(data[i]);
 
-  return multiplyingArray;
-};
-
-const summMultiplying = (
-  ratingGames: [string, any][],
-  multiplying: (string | number)[][][],
-  correlationSum: number
-) => {
-  let newArrGame = [];
-  const userCount = multiplying[0].length;
-
-  for (let i = 1; i < userCount; i++) {
-    if (ratingGames[i][1] === 0) {
-      const res = multiplying.reduce((a, v) => {
-        if (v[i][0] === 'Name') return 0;
-        return Number(v[i][1]) + a;
-      }, 0);
-
-      if (res !== 0)
-        newArrGame.push([
-          i,
-          ratingGames[i][0],
-          (res / correlationSum).toFixed(4),
-        ]);
+    for (let j = 1; j < userLength; j++) {
+      if (entriesUser[j][0] !== ' Game') {
+        arrSum[j] = arrSum[j] + Number(entriesUser[j][1]);
+        if (entriesUser[j][1] !== 0) {
+          arrCount[j] = arrCount[j] + 1;
+        }
+      }
     }
   }
 
-  newArrGame = newArrGame.sort((a, b) => {
-    if (a[2] > b[2]) {
-      return 1;
-    }
-    if (a[2] < b[2]) {
-      return -1;
-    }
-    return 0;
-  });
+  arrSum = arrSum.map((item, index) => item / arrCount[index]);
 
-  return newArrGame.slice(-5);
+  return arrSum;
 };
 
-export const collaborativeFilteringAction: ActionCreator<types.collaborativeFiltering> = (
-  collaborativeFiltering: (string | number)[][]
+const alignmentValues = (correlation: number[][], avgUser: number[]) => {
+  const lengthGame = correlation.length;
+  const lengthUser = Object.keys(data[0]).length;
+
+  let arr = [];
+  for (let i = 0; i < lengthGame; i++) {
+    let arrAlignment = [];
+    const entriesUser = Object.entries(data[correlation[i][1]]);
+    arrAlignment.push(entriesUser[0][1]);
+    for (let j = 1; j < lengthUser; j++) {
+      arrAlignment.push(Number(entriesUser[j][1]) - avgUser[j]);
+    }
+    arr.push(arrAlignment);
+  }
+
+  return arr;
+};
+
+const avgGameRating = (aligments: (string | number)[][]) => {
+  const lengthGame = aligments.length;
+  const lengthUser = aligments[0].length;
+
+  let arr = [];
+  for (let i = 0; i < lengthGame; i++) {
+    let avg = 0;
+    for (let j = 1; j < lengthUser; j++) {
+      avg += Number(aligments[i][j]);
+    }
+
+    avg /= lengthUser - 1;
+    arr.push([aligments[i][0], avg.toFixed(4)]);
+  }
+
+  return arr;
+};
+
+export const filteringAction: ActionCreator<types.filtering> = (
+  filtering: (string | number)[][]
 ) => ({
-  type: types.SignInActionTypes.COLALABORATIVE_FILTERING_REQUEST,
-  collaborativeFiltering: collaborativeFiltering,
+  type: types.SignInActionTypes.FILTERING_REQUEST,
+  filtering: filtering,
 });
 
-export const collaborativeFiltering = () => {
+export const filtering = () => {
   return (dispatch: Dispatch, getState: () => AppState) => {
     try {
       const profile = getState().signIn.profile;
       const ratingGames = getState().signIn.ratingGames;
 
       const entriesRatingGames = Object.entries(ratingGames);
-
       const resultCorrelation = correlation(profile, entriesRatingGames);
-      const correlationSum = resultCorrelation.reduce(
-        (acc, value) => acc + value[0],
-        0
+
+      // вычислить среднюю оценку каждого пользователя (как пользователь оценивает игры) (нули не учитывать)
+      const avgUserScore = avgUserRating();
+
+      // вычесть из каждой оценки пользователя его среднюю оценку (для выравнивания результатов)
+      const alignmentOfValues = alignmentValues(
+        resultCorrelation,
+        avgUserScore
       );
 
-      const resultMultiplying = multiplyingTheScoreByTheCoefficientPirson(
-        resultCorrelation
-      );
-      const res = summMultiplying(
-        entriesRatingGames,
-        resultMultiplying,
-        correlationSum
-      ).reverse();
+      // вычеслить среднеюю оценку для каждой игры
+      const avgGameScore = avgGameRating(alignmentOfValues);
 
-      dispatch(collaborativeFilteringAction(res));
+      // результат)
+      const res = avgGameScore.sort((a, b) => {
+        if (a[1] > b[1]) {
+          return 1;
+        }
+        if (a[1] < b[1]) {
+          return -1;
+        }
+        return 0;
+      });
+
+      dispatch(filteringAction(res.slice(0, 5)));
     } catch (error) {
       console.log(error);
       dispatch(titleInputFailureAction(error));

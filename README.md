@@ -30,19 +30,19 @@ nmp start
 
 Полученные после генерации данных массив находится в файле `app/src/data/user_data.csv`, однако для использования его необходимо преобразовать в файл json `app/src/data/user_data.json`
 
-## Описание алгоритма коллаборативной фильтрации
+## Описание алгоритма контент-ориентированной фильтрации
 
-- Определяется текущий пользователь
-- Определяется корреляция оценок пользователей с оценками текущего пользователя
-- Отсекаются пользователи с неположительной оценкой корреляции, из оставшехся выбираются 5 пользоватлей с самым высоким показателем
 - Определяется текущая игра
-- Определяются оценки игр, для этого суммируются оценки отобранных пользователей, предварительно помноженные на значение их корреляции с текущим пользователем
-- Полученная сумма делится на сумму мер выбранных пользователей
+- Определяется корреляция оценок игр с оценками текущей игры
+- Отсекаются игры с неположительной оценкой корреляции оценок
+- Для каждого пользователя определяется средняя оценка игр
+- Определяются оценки игр, для этого создается вектор оценок игры с учетом вычета для каждого пользователя его средней оценки
+- Выводятся лучшие совпадения
 
 ## Пример работы
 
-![](https://sun9-29.userapi.com/impf/CWjyzectOnNL5CJToWhCT2vMenFjt-e7iMyqLA/y5mwRi3x-yc.jpg?size=2560x1403&quality=96&proxy=1&sign=39f82b1b4399a13bf4f289aa4d241f8c&type=album)
+![](https://sun9-55.userapi.com/impf/Fp1xrR_CyjMjWWZTMaqrtvZaasAGvAgRwPfbJw/rd3vP_ZZoJg.jpg?size=2560x1394&quality=96&proxy=1&sign=2ba3c301916b862e58bd8cd4773cf245&type=album)
 
-![](https://sun9-51.userapi.com/impf/GARHsDGnt-sKh9JOEKfbkliVBn2Y0CN4N7FcZg/K6L4r-tvhv8.jpg?size=2560x1404&quality=96&proxy=1&sign=762136d123dea486b173e85b0b308564&type=album)
+![](https://sun9-30.userapi.com/impf/OHZyvxHDa_FP3lfd13gb2kCOc32s7z1eqk7VhQ/fsYoqQk5G9M.jpg?size=2560x1383&quality=96&proxy=1&sign=82ef94e2b6a96be9aa2bcaac07977f1f&type=album)
 
-![](https://sun9-24.userapi.com/impf/4H-aYfOcj8Hs96yw7MhEY27JwEWdTZiZjwG61Q/6fFjffmihN0.jpg?size=2560x1403&quality=96&proxy=1&sign=a3ed609604c835625cca9aafa0f53695&type=album)
+![](https://sun9-74.userapi.com/impf/AG2FPUm10WX6Z4v7EdbvmBmBReENQULRq9TBjw/NFMOYQQE-9U.jpg?size=2560x1399&quality=96&proxy=1&sign=2c557396585e6241f99f8c5608a82c08&type=album)

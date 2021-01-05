@@ -7,7 +7,7 @@ export type signInReducerState = {
   userData: any;
   error: boolean;
   ratingGames: object;
-  collaborativeFiltering: (string | number)[][];
+  filtering: (string | number)[][];
 };
 
 const initialState: signInReducerState = {
@@ -15,7 +15,7 @@ const initialState: signInReducerState = {
   userData: [],
   error: false,
   ratingGames: {},
-  collaborativeFiltering: [],
+  filtering: [],
 };
 
 const signInReducer: Reducer<signInReducerState, SignInActions> = (
@@ -29,9 +29,8 @@ const signInReducer: Reducer<signInReducerState, SignInActions> = (
         profile: {
           name: action.name,
           title: state.profile.title,
-          index: action.index,
+          index: state.profile.index,
         },
-        ratingGames: action.ratingGames,
         error: false,
       };
 
@@ -41,8 +40,9 @@ const signInReducer: Reducer<signInReducerState, SignInActions> = (
         profile: {
           name: state.profile.name,
           title: action.title,
-          index: state.profile.index,
+          index: action.index,
         },
+        ratingGames: action.ratingGames,
         error: false,
       };
 
@@ -58,14 +58,14 @@ const signInReducer: Reducer<signInReducerState, SignInActions> = (
         error: true,
       };
 
-    case SignInActionTypes.COLALABORATIVE_FILTERING_REQUEST:
+    case SignInActionTypes.FILTERING_REQUEST:
       return {
         ...state,
-        collaborativeFiltering: action.collaborativeFiltering,
+        filtering: action.filtering,
         error: false,
       };
 
-    case SignInActionTypes.COLALABORATIVE_FILTERING_FAILURE:
+    case SignInActionTypes.FILTERING_FAILURE:
       return {
         ...state,
         error: true,

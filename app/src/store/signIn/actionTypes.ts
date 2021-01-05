@@ -6,15 +6,13 @@ export enum SignInActionTypes {
   INPUT_TITLE_REQUEST = 'signIn.INPUT_TITLE_REQUEST',
   INPUT_TITLE_FAILURE = 'signIn.INPUT_TITLE_FAILURE',
 
-  COLALABORATIVE_FILTERING_REQUEST = 'signIn.COLALABORATIVE_FILTERING_REQUEST',
-  COLALABORATIVE_FILTERING_FAILURE = 'signIn.COLALABORATIVE_FILTERING_FAILURE',
+  FILTERING_REQUEST = 'signIn.FILTERING_REQUEST',
+  FILTERING_FAILURE = 'signIn.FILTERING_FAILURE',
 }
 
 export type signInFindName = {
   type: SignInActionTypes.INPUT_NAME_REQUEST;
   name: string;
-  index: number;
-  ratingGames: object;
 };
 
 export type signInFindNameFailure = {
@@ -25,6 +23,8 @@ export type signInFindNameFailure = {
 export type signInFindTitle = {
   type: SignInActionTypes.INPUT_TITLE_REQUEST;
   title: string;
+  ratingGames: object;
+  index: number;
 };
 
 export type signInFindTitleFailure = {
@@ -32,14 +32,14 @@ export type signInFindTitleFailure = {
   title: RequestError;
 };
 
-export type collaborativeFiltering = {
-  type: SignInActionTypes.COLALABORATIVE_FILTERING_REQUEST;
-  collaborativeFiltering: (string | number)[][];
+export type filtering = {
+  type: SignInActionTypes.FILTERING_REQUEST;
+  filtering: (string | number)[][];
 };
 
-export type collaborativeFilteringFailure = {
-  type: SignInActionTypes.COLALABORATIVE_FILTERING_FAILURE;
-  collaborativeFiltering: RequestError;
+export type filteringFailure = {
+  type: SignInActionTypes.FILTERING_FAILURE;
+  filtering: RequestError;
 };
 
 export type SignInActions =
@@ -47,5 +47,5 @@ export type SignInActions =
   | signInFindNameFailure
   | signInFindTitle
   | signInFindTitleFailure
-  | collaborativeFiltering
-  | collaborativeFilteringFailure;
+  | filtering
+  | filteringFailure;
