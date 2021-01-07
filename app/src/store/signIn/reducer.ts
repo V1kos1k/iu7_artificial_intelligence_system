@@ -1,21 +1,29 @@
 import { Reducer } from 'redux';
 import { SignInActionTypes, SignInActions } from './actionTypes';
-import { ProfileType } from '../../types/types';
+import { ReferenceType } from '../../types/types';
 
 export type signInReducerState = {
-  profile: ProfileType;
-  userData: any;
+  reference: {
+    online: boolean;
+    age_restriction: number;
+    year_of_manufacture: number[];
+    rating: number;
+    publisher: string;
+  };
   error: boolean;
-  ratingGames: object;
-  filtering: (string | number)[][];
+  searching: (string | number)[][];
 };
 
 const initialState: signInReducerState = {
-  profile: { name: '', title: '', index: -1 },
-  userData: [],
+  reference: {
+    online: false,
+    age_restriction: 0,
+    year_of_manufacture: [1980, 2021],
+    rating: 50,
+    publisher: '',
+  },
   error: false,
-  ratingGames: {},
-  filtering: [],
+  searching: [],
 };
 
 const signInReducer: Reducer<signInReducerState, SignInActions> = (
@@ -23,49 +31,27 @@ const signInReducer: Reducer<signInReducerState, SignInActions> = (
   action
 ) => {
   switch (action.type) {
-    case SignInActionTypes.INPUT_NAME_REQUEST:
+    case SignInActionTypes.INPUT_REFERENCE_REQUEST:
       return {
         ...state,
-        profile: {
-          name: action.name,
-          title: state.profile.title,
-          index: state.profile.index,
-        },
+        reference: action.reference,
         error: false,
       };
 
-    case SignInActionTypes.INPUT_TITLE_REQUEST:
-      return {
-        ...state,
-        profile: {
-          name: state.profile.name,
-          title: action.title,
-          index: action.index,
-        },
-        ratingGames: action.ratingGames,
-        error: false,
-      };
-
-    case SignInActionTypes.INPUT_NAME_FAILURE:
+    case SignInActionTypes.INPUT_REFERENCE_FAILURE:
       return {
         ...state,
         error: true,
       };
 
-    case SignInActionTypes.INPUT_TITLE_FAILURE:
+    case SignInActionTypes.SEARCHING_REQUEST:
       return {
         ...state,
-        error: true,
-      };
-
-    case SignInActionTypes.FILTERING_REQUEST:
-      return {
-        ...state,
-        filtering: action.filtering,
+        searching: action.searching,
         error: false,
       };
 
-    case SignInActionTypes.FILTERING_FAILURE:
+    case SignInActionTypes.SEARCHING_FAILURE:
       return {
         ...state,
         error: true,

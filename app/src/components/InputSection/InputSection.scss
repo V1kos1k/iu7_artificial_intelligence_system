@@ -1,0 +1,52 @@
+$input-height: 75px;
+
+.input-section {
+  width: 100%;
+  position: absolute;
+  // display: flex;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: $input-height * 3;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in;
+  background-color: white;
+
+  &.folded {
+    width: 95%;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+
+    input {
+      background-color: rgb(233, 226, 192);
+    }
+
+    span {
+      background-color: rgb(233, 226, 192);
+    }
+  }
+
+  &.folded + .folded {
+    width: 90%;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+
+    input {
+      background-color: rgb(225, 188, 239);
+    }
+
+    span {
+      background-color: rgb(225, 188, 239);
+    }
+  }
+
+  &.fold-up {
+    margin-top: -$input-height;
+  }
+}

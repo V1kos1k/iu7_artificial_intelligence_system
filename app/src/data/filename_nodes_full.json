@@ -621,7 +621,7 @@
         "parent": 32,
         "signs": {
             "online": true,
-            "age_restriction": 13,
+            "age_restriction": 14,
             "year_of_manufacture": 1993,
             "rating": 72,
             "number_of_games_in_the_series": 17,
@@ -920,7 +920,7 @@
         "parent": 37,
         "signs": {
             "online": true,
-            "age_restriction": 13,
+            "age_restriction": 14,
             "year_of_manufacture": 2000,
             "rating": 84,
             "number_of_games_in_the_series": 17,
@@ -946,7 +946,7 @@
         "parent": 38,
         "signs": {
             "online": true,
-            "age_restriction": 13,
+            "age_restriction": 14,
             "year_of_manufacture": 1998,
             "rating": 75,
             "number_of_games_in_the_series": 5,
@@ -985,7 +985,7 @@
         "parent": 38,
         "signs": {
             "online": false,
-            "age_restriction": 13,
+            "age_restriction": 14,
             "year_of_manufacture": 2008,
             "rating": 87,
             "number_of_games_in_the_series": 4,
@@ -1037,7 +1037,7 @@
         "parent": 38,
         "signs": {
             "online": false,
-            "age_restriction": 13,
+            "age_restriction": 14,
             "year_of_manufacture": 2001,
             "rating": 78,
             "number_of_games_in_the_series": 3,
@@ -1050,7 +1050,7 @@
         "parent": 38,
         "signs": {
             "online": false,
-            "age_restriction": 13,
+            "age_restriction": 14,
             "year_of_manufacture": 2013,
             "rating": 68,
             "number_of_games_in_the_series": 2,

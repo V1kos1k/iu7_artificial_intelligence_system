@@ -2,87 +2,69 @@ import React, { RefObject, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './App.scss';
 
-import { nameInput, titleInput, filtering } from '../../store/signIn/actions';
+import { referenceInput, searching } from '../../store/signIn/actions';
 import { AppState } from '../../store/reducers';
-import { push } from 'connected-react-router';
 
-import { ProfileType } from '../../types/types';
-
-type InputSectionProps = {
-  value: string;
-  reff: RefObject<HTMLDivElement>;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onClick: () => void;
-  placeholder: string;
-  class: string;
-  icon: string;
-};
-
-const InputSection = (props: InputSectionProps) => {
-  return (
-    <div className={`input-section ${props.class}`} ref={props.reff}>
-      <input
-        type="name"
-        placeholder={props.placeholder}
-        autoComplete="off"
-        value={props.value}
-        onChange={props.onChange}
-      />
-      <div className="animated-button">
-        <span className={props.value ? 'icon-lock next' : 'icon-lock'}>
-          {/* <span className="icon-lock next"> */}
-          <i className="fa fa-lock" />
-        </span>
-        <span className="next-button">
-          <i className={`fa ${props.icon}`} onClick={props.onClick} />
-        </span>
-      </div>
-    </div>
-  );
-};
+import { RadioButtonGroup } from '../../components/RadioButtonGroup/RadioButtonGroup';
+import { SelectSection } from '../../components/SelectSection/SelectSection';
+import { SliderSection } from '../../components/SliderSection/SliderSection';
+import { InputSection } from '../../components/InputSection/InputSection';
+import { TextSection } from '../../components/TextSection/TextSection';
+import { Button } from '../../components/Button/Button';
 
 export const App: React.FC = () => {
   const dispatch = useDispatch();
 
-  const profile: ProfileType = useSelector(
-    (state: AppState) => state.signIn.profile
-  );
-
   const isError = useSelector((state: AppState) => state.signIn.error);
-  const filter = useSelector((state: AppState) => state.signIn.filtering);
+  const search = useSelector((state: AppState) => state.signIn.searching);
 
-  const [name, setName] = useState('');
-  const [title, setTitle] = useState('');
+  const [online, setOnline] = useState(false);
+  const [age, setAge] = useState('');
+  const [year, setYear] = useState([1980, 2021]);
+  const [rating, setRating] = useState(50);
+  const [publisher, setPublisher] = useState('');
   const [success, setSuccess] = useState(false);
-  const nameRef: RefObject<HTMLDivElement> = React.createRef();
-  const titleRef: RefObject<HTMLDivElement> = React.createRef();
 
-  const onChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target) setName(e.target.value);
-    else console.log('e == null');
+  const onClickOnline = (name: string) => {
+    if (name === 'wifi') setOnline(true);
+    else setOnline(false);
   };
 
-  const onChangeTitle = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target) setTitle(e.target.value);
-    else console.log('e == null');
+  const onChangeAge = (
+    e: React.ChangeEvent<{
+      name?: string | undefined;
+      value: unknown;
+    }>
+  ) => {
+    setAge(String(e.target.value));
   };
 
-  const onClickNext = (nameStep: string) => {
-    const refName = nameRef.current;
-    const refTitle = titleRef.current;
+  const onChangeYear = (
+    e: React.ChangeEvent<{}>,
+    newValue: number | number[]
+  ) => {
+    const value = String(newValue).split(',');
+    setYear([Number(value[0]), Number(value[1])]);
+  };
 
-    if (nameStep === 'name') {
-      dispatch(nameInput(name));
-    } else if (nameStep === 'title') {
-      dispatch(titleInput(title));
-      setSuccess(true);
-      dispatch(filtering());
-    }
+  const onChangeRating = (
+    e: React.ChangeEvent<{}>,
+    newValue: number | number[]
+  ) => {
+    setRating(Number(newValue));
+  };
 
-    if (refName && refTitle) {
-      refName.classList.toggle('fold-up');
-      refTitle.classList.remove('folded');
-    } else console.log(refName, refTitle);
+  const onChangePublisher = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPublisher(e.target.value);
+  };
+
+  const onClickButton = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    dispatch(referenceInput(online, age, year, rating, publisher));
+    dispatch(searching());
+    if (!isError) setSuccess(true);
   };
 
   const signIn = () => {
@@ -92,50 +74,68 @@ export const App: React.FC = () => {
           <h1>Отправка данных</h1>
           <p>Введите необходимую информацию</p>
         </header>
-        <form>
-          {isError ? (
-            <div className="finish failure done">
-              <a href="/">
-                Введенные данные некорректны! Повторить ввод?
-                <span>ДА!!!</span>
-              </a>
-            </div>
-          ) : (
-            <>
-              <InputSection
-                value={name}
-                placeholder="ВВЕДИТЕ СВОЕ ПОЛНОЕ ИМЯ"
-                class=""
-                icon="fa-arrow-up"
-                reff={nameRef}
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                  onChangeName(e)
-                }
-                onClick={() => onClickNext('name')}
-              />
-              <InputSection
-                value={title}
-                placeholder="ВВЕДИТЕ НАЗВАНИЕ ИГРЫ"
-                class="folded"
-                icon="fa-send"
-                reff={titleRef}
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                  onChangeTitle(e)
-                }
-                onClick={() => onClickNext('title')}
-              />
-              {/* <div className={`finish success ${success ? 'done' : ''}`}>
-                <p>ПРИВЕТ {name}</p>
-              </div> */}
-            </>
-          )}
+        <form className="input-section">
+          <RadioButtonGroup
+            onClickWifiNo={() => onClickOnline('no')}
+            onClickWifi={() => onClickOnline('wifi')}
+          />
+
+          <SelectSection
+            value={age}
+            placeholder="Введите возрастноое ограничение"
+            onChange={(
+              e: React.ChangeEvent<{
+                name?: string | undefined;
+                value: unknown;
+              }>
+            ) => onChangeAge(e)}
+          />
+
+          <SliderSection
+            value={year}
+            label="Год выпуска"
+            min={1980}
+            max={2021}
+            marks={[
+              { value: 1980, label: '80' },
+              { value: 2021, label: '2021' },
+            ]}
+            ariaLabelledby="range-slider"
+            onChange={(e, newValue) => onChangeYear(e, newValue)}
+          />
+
+          <SliderSection
+            value={rating}
+            label="Рейтинг"
+            min={0}
+            max={100}
+            ariaLabelledby="slider"
+            marks={[
+              { value: 0, label: '0' },
+              { value: 100, label: '100' },
+            ]}
+            onChange={(e, newValue) => onChangeRating(e, newValue)}
+          />
+
+          <TextSection
+            value={publisher}
+            label="Издатель"
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              onChangePublisher(e)
+            }
+          />
+
+          <Button
+            onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>
+              onClickButton(e)
+            }
+          />
         </form>
       </div>
     );
   };
 
   const result = () => {
-    console.log(filter);
     return (
       <div className="registration-form">
         <header>
@@ -144,7 +144,7 @@ export const App: React.FC = () => {
         </header>
 
         <div className="content">
-          {filter.map((item, index) => {
+          {search.map((item, index) => {
             return (
               <div className="part" key={index}>
                 <h3>Игра: {item[0]}</h3>
