@@ -1,6 +1,12 @@
 import { Mark } from '@material-ui/core/Slider';
 import { RefObject } from 'react';
 
+export type ProfileType = {
+  name: string;
+  title: string;
+  index: number;
+};
+
 export type ReferenceType = {
   online: boolean;
   age_restriction: number;
@@ -23,15 +29,13 @@ export type SelectSectionProps = {
 };
 
 export type InputSectionProps = {
-  value: string | number;
-  onChange: (
-    event: React.ChangeEvent<{
-      name?: string | undefined;
-      value: unknown;
-    }>,
-    child: React.ReactNode
-  ) => void;
+  value: string;
+  reff: RefObject<HTMLDivElement>;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onClick: () => void;
   placeholder: string;
+  class: string;
+  icon: string;
 };
 
 export type SliderSectionProps = {

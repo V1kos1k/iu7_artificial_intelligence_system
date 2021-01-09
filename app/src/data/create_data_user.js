@@ -63,9 +63,66 @@ function creteListName(count) {
     return arrName
 }
 
+// function createData(count) {
+//     // const arrName = creteListName(count)
+//     const arrName = [
+//         'Anthony Hampton',    'Mabel Sawyer',
+//         'Jan Forman',         'Gordon Douglas',
+//         'Gerald Schmidt',     'Mabel Forman',
+//         'Debbie Anderson',    'Peter Jenkins',
+//         'Thomas Pierce',      'Lawrence Black',
+//         'Bob Schmidt',        'Bonnie McDonald',
+//         'Percy Holiday',      'Linda Nichols',
+//         'Christine Ford',     'Anthony Blum',
+//         'Quinten Winters',    'Karla Prichard',
+//         'Orson Holiday',      'Jacki Yeager',
+//         'Diane Edwards',      'Matthew Pierce',
+//         'Diane McDonald',     'Nathen Hunter',
+//         'Diane Winters',      'Quincey Yeager',
+//         'Morris Jenkins',     'Marilyn Conway',
+//         'Mary Jane Anderson', 'Michael Ward'
+//     ]
+//     console.log(arrName)
+//     let arrRes = ['Name']
+
+//     for (let i = 40 ; i <= 109; i++) {
+//         arrRes.push(data[i].title)
+//     }
+
+//     arrRes = [arrRes.join(separator)]
+
+//     for (let i = 0; i < arrName.length; i++) {
+//         let arrStr = [arrName[i]]
+//         for (let j = 0; j < 70; j++) {
+//             if (Math.random() * 5 < 4) arrStr.push(0)
+//             else arrStr.push((Math.random() * 5).toFixed(2))
+//         }
+//         arrRes.push(arrStr.join(separator))
+//     }
+
+//     return arrRes
+// }
+
 function createData(count) {
-    const arrName = creteListName(count)
+    // const arrName = creteListName(count)
     let arrRes = ['Name']
+    const arrName = [
+        'Anthony Hampton',    'Mabel Sawyer',
+        'Jan Forman',         'Gordon Douglas',
+        'Gerald Schmidt',     'Mabel Forman',
+        'Debbie Anderson',    'Peter Jenkins',
+        'Thomas Pierce',      'Lawrence Black',
+        'Bob Schmidt',        'Bonnie McDonald',
+        'Percy Holiday',      'Linda Nichols',
+        'Christine Ford',     'Anthony Blum',
+        'Quinten Winters',    'Karla Prichard',
+        'Orson Holiday',      'Jacki Yeager',
+        'Diane Edwards',      'Matthew Pierce',
+        'Diane McDonald',     'Nathen Hunter',
+        'Diane Winters',      'Quincey Yeager',
+        'Morris Jenkins',     'Marilyn Conway',
+        'Mary Jane Anderson', 'Michael Ward'
+    ]
 
     arrRes = arrName.map(item => item)
     arrRes.unshift('Game')

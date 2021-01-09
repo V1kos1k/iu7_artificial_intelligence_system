@@ -11,57 +11,49 @@ body {
   height: 100%;
 }
 
-.registration-form {
-  width: 400px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  top: 15%;
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+  .registration-form {
+    width: 400px;
+    top: 15%;
 
-  background: transparent;
+    background: transparent;
 
-  header {
-    position: relative;
-    z-index: 4;
-    background: white;
-    padding: 20px 40px;
-    border-radius: 15px 15px 0 0;
-    border-bottom-style: inset;
-
-    h1 {
-      font-weight: 900;
-      letter-spacing: 1.5px;
-      color: #333;
-      font-size: 23px;
-      text-transform: uppercase;
-      margin: 0;
+    &__result {
+      width: 600px;
     }
 
-    p {
-      word-spacing: 0px;
-      color: rgb(159, 172, 182);
-      font-size: 17px;
-      margin: 0;
-      margin-top: 5px;
+    header {
+      position: relative;
+      z-index: 4;
+      background: white;
+      padding: 20px 40px;
+      border-radius: 15px 15px 0 0;
+      border-bottom-style: inset;
+
+      h1 {
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        color: #333;
+        font-size: 23px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      p {
+        word-spacing: 0px;
+        color: rgb(159, 172, 182);
+        font-size: 17px;
+        margin: 0;
+        margin-top: 5px;
+      }
     }
-  }
 
-  form {
-    position: relative;
-  }
-
-  .input-section {
-    width: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: $input-height * 7;
-    border-radius: 0 0 15px 15px;
-    overflow: hidden;
-    z-index: 2;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease-in;
-    background-color: white;
+    form {
+      position: relative;
+    }
   }
 }
 
@@ -88,6 +80,9 @@ button {
 
 .success {
   background: limegreen;
+  margin-top: 0;
+  flex-direction: column;
+  height: 200px;
 
   p {
     color: white;
@@ -97,6 +92,31 @@ button {
     width: 100%;
     text-align: center;
   }
+}
+
+.failure {
+  background: red;
+
+  a {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+
+    > span {
+      padding: 9px;
+      display: inline-block;
+      border: 1px solid;
+      border-radius: 50%;
+    }
+  }
+}
+
+.done {
+  margin-top: 0;
 }
 
 .content {

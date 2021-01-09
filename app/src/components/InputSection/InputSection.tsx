@@ -2,42 +2,25 @@ import React, { RefObject, useState } from 'react';
 import { InputSectionProps } from '../../types/types';
 import './InputSection.scss';
 
-import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-
 export const InputSection = (props: InputSectionProps) => {
   return (
-    <FormControl variant="outlined">
-      <InputLabel htmlFor="outlined-age-native-simple">
-        {props.placeholder}
-      </InputLabel>
-      <Select
-        native
+    <div className={`input-section ${props.class}`} ref={props.reff}>
+      <input
+        type="name"
+        placeholder={props.placeholder}
+        autoComplete="off"
         value={props.value}
         onChange={props.onChange}
-        label="Age"
-        inputProps={{
-          name: 'age',
-          id: 'outlined-age-native-simple',
-        }}
-      >
-        <option aria-label="None" value="" />
-        <option value={10}>Ten</option>
-        <option value={20}>Twenty</option>
-        <option value={30}>Thirty</option>
-      </Select>
-    </FormControl>
+      />
+      <div className="animated-button">
+        <span className={props.value ? 'icon-lock next' : 'icon-lock'}>
+          {/* <span className="icon-lock next"> */}
+          <i className="fa fa-lock" />
+        </span>
+        <span className="next-button">
+          <i className={`fa ${props.icon}`} onClick={props.onClick} />
+        </span>
+      </div>
+    </div>
   );
 };
-
-{
-  /* <input
-      type={props.type}
-      placeholder={props.placeholder}
-      autoComplete="off"
-      value={props.value}
-      onChange={props.onChange}
-    /> */
-}

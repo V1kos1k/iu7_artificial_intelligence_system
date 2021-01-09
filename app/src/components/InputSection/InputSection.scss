@@ -1,12 +1,10 @@
 $input-height: 75px;
+$button-icon: #b79ace;
+$button-color: #fff0f0;
 
 .input-section {
   width: 100%;
   position: absolute;
-  // display: flex;
-  left: 50%;
-  transform: translate(-50%, 0);
-  height: $input-height * 3;
   border-radius: 0 0 15px 15px;
   overflow: hidden;
   z-index: 2;
@@ -14,11 +12,17 @@ $input-height: 75px;
   transition: all 0.2s ease-in;
   background-color: white;
 
+  &__sing-in {
+    height: $input-height;
+    display: flex;
+  }
+
+  &__searching {
+    height: $input-height * 7;
+  }
+
   &.folded {
-    width: 95%;
     margin-top: 10px;
-    left: 50%;
-    transform: translate(-50%, 0);
     z-index: 1;
 
     input {
@@ -49,4 +53,55 @@ $input-height: 75px;
   &.fold-up {
     margin-top: -$input-height;
   }
+}
+
+form input {
+  background: lighten(rgb(243, 243, 251), 5%);
+  color: black;
+  width: 80%;
+  border: 0;
+  padding: 20px 40px;
+  margin: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: rgb(80, 80, 80);
+    font-weight: 100;
+  }
+}
+
+.animated-button {
+  width: 20%;
+  background-color: $button-color;
+
+  span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: $input-height;
+    text-align: center;
+    height: $input-height;
+    transition: all 0.2s ease-in;
+
+    i {
+      font-size: 25px;
+      color: $button-icon;
+    }
+  }
+
+  .next-button {
+    background: transparent;
+    color: $button-icon;
+    font-weight: 100;
+    width: 100%;
+    border: 0;
+  }
+}
+
+.next {
+  margin-top: -$input-height;
 }
