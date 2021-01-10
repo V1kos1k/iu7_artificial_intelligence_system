@@ -14,6 +14,16 @@ Bauman Moscow State Technical University
 
 ![](https://sun9-21.userapi.com/impf/ZjXAQoQR2njWNybWYXIZMbsTk8iis3fgUz7XBQ/Ic2gldqaQ-g.jpg?size=1273x1578&quality=96&proxy=1&sign=21702cb722a516652a2c897031f67e8b&type=album)
 
+## Шаблоны
+
+- игра [название]
+
+- игры [список игр]
+
+- критерий [название]
+
+- издатель [название]
+
 ## Список синонимов
 
 Для составления списка синонимов использовался ресурс [КартаСлов](https://kartaslov.ru/).
