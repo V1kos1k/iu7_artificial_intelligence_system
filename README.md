@@ -12,7 +12,7 @@ Bauman Moscow State Technical University
 
 ## Схема диалогов
 
-![](https://sun9-21.userapi.com/impf/ZjXAQoQR2njWNybWYXIZMbsTk8iis3fgUz7XBQ/Ic2gldqaQ-g.jpg?size=1273x1578&quality=96&proxy=1&sign=21702cb722a516652a2c897031f67e8b&type=album)
+![](https://sun9-8.userapi.com/impf/0BqseTqLZwu1s5cJ5Fuh6-L1lg8vtM0zcyZXdw/h9yoolbxkvI.jpg?size=860x1114&quality=96&proxy=1&sign=e1d20a822695d0254ca46cef96aa3882&type=album)
 
 ## Шаблоны
 
