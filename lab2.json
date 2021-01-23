@@ -1,0 +1,668 @@
+[
+  {
+      "title": "Кубики",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1930,
+      "rating": 80,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Вадим Башуров"
+  },
+  {
+      "title": "Большие продажи",
+      "online": false,
+      "age_restriction": 14,
+      "year_of_manufacture": 2000,
+      "rating": 63,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Вадим Башуров"
+  },
+  {
+      "title": "Кто хочет стать миллионером?",
+      "online": true,
+      "age_restriction": 18,
+      "year_of_manufacture": 2012,
+      "rating": 97,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Вадим Башуров"
+  },
+  {
+      "title": "Поле чудес",
+      "online": true,
+      "age_restriction": 18,
+      "year_of_manufacture": 2008,
+      "rating": 45,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Вадим Башуров"
+  },
+  {
+      "title": "4 фотки 1 слово",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2018,
+      "rating": 74,
+      "number_of_games_in_the_series": 1,
+      "publisher": " Community Center GmbH"
+  },
+  {
+      "title": "Бесконечное лето",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2013,
+      "rating": 97,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Soviet Games, Steam"
+  },
+  {
+      "title": "Рандеву с незнакомкой",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2001,
+      "rating":34,
+      "number_of_games_in_the_series": 3,
+      "publisher": "ExE-Soft"
+  },
+  {
+      "title": "Heroes of Might and Magic",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1995,
+      "rating": 94,
+      "number_of_games_in_the_series": 19,
+      "publisher": "New World Computing"
+  },
+  {
+      "title": "King's Bounty",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1990,
+      "rating": 82,
+      "number_of_games_in_the_series": 9,
+      "publisher": "New World Computing"
+  },
+  {
+      "title": "Heroes II",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1996,
+      "rating": 86,
+      "number_of_games_in_the_series": 19,
+      "publisher": "New World Computing"
+  },
+  {
+      "title": "Pocket Heroes",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2010,
+      "rating": 87,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Spacetime Studios"
+  },
+  {
+      "title": "Quest of the Hero",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 1991,
+      "rating": 67,
+      "number_of_games_in_the_series":1,
+      "publisher": "Gremlin Interactive"
+  },
+  {
+      "title": "The Path",
+      "online": false,
+      "age_restriction": 16,
+      "year_of_manufacture": 2009,
+      "rating": 66,
+      "number_of_games_in_the_series":1,
+      "publisher": "Tale of Tales"
+  },
+  {
+      "title": "Dear Esther",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 2012,
+      "rating": 98,
+      "number_of_games_in_the_series": 1,
+      "publisher": "The Chinese Room"
+  },
+  {
+      "title": "Journey",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2012,
+      "rating": 95,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Sony Computer Entertainment"
+  },
+  {
+      "title": "The Stanley Parable",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 2011,
+      "rating": 90,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Steam"
+  },
+  {
+      "title": "Gone Home",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 2013,
+      "rating": 86,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Fullbright Company"
+  },
+  {
+      "title": "Fibrillation",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2012,
+      "rating": 0,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Egor Rezenov"
+  },
+  {
+      "title": "Pacman",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1980,
+      "rating": 99,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Namco"
+  },
+  {
+      "title": "Lode Runner",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 1983,
+      "rating": 74,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Brøderbund"
+  },
+  {
+      "title": "Bomberman",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1985,
+      "rating": 67,
+      "number_of_games_in_the_series": 5,
+      "publisher": "Hudson Soft"
+  },
+  {
+      "title": "Outlast",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2018,
+      "rating": 80,
+      "number_of_games_in_the_series": 2,
+      "publisher": "Red Barrels"
+  },
+  {
+      "title": "Alien: Isolation",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2014,
+      "rating": 79,
+      "number_of_games_in_the_series": 2,
+      "publisher": "Sega"
+  },
+  {
+      "title": "Penumbra",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2007,
+      "rating": 73,
+      "number_of_games_in_the_series": 3,
+      "publisher": "Lexicon Entertainment"
+  },
+  {
+      "title": "Resident Evil",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 1996,
+      "rating": 91,
+      "number_of_games_in_the_series": 26,
+      "publisher": "Capcom"
+  },
+  {
+      "title": "Silent Hill",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture":1999,
+      "rating": 89,
+      "number_of_games_in_the_series": 8,
+      "publisher": "Konami"
+  },
+  {
+      "title": "Amnesia: The Dark Descent",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2010,
+      "rating": 85,
+      "number_of_games_in_the_series": 2,
+      "publisher": "Frictional Games"
+  },
+  {
+      "title": "SOMA",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2015,
+      "rating": 84,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Frictional Games"
+  },
+  {
+      "title": "Dead Space",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2008,
+      "rating": 86,
+      "number_of_games_in_the_series": 3,
+      "publisher": "Electronic Arts"
+  },
+  {
+      "title": "Condemned",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2006,
+      "rating": 78,
+      "number_of_games_in_the_series": 2,
+      "publisher": "Sega"
+  },
+  {
+      "title": "Alan Wake",
+      "online": false,
+      "age_restriction": 18,
+      "year_of_manufacture": 2012,
+      "rating": 83,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Remedy Entertainment"
+  },
+  {
+      "title": "Call of Duty",
+      "online": true,
+      "age_restriction": 18,
+      "year_of_manufacture": 2003,
+      "rating": 97,
+      "number_of_games_in_the_series": 32,
+      "publisher": "Activision"
+  },
+  {
+      "title": "Medal of Honor",
+      "online": true,
+      "age_restriction": 13,
+      "year_of_manufacture": 1993,
+      "rating": 72,
+      "number_of_games_in_the_series": 17,
+      "publisher": "Electronic Arts"
+  },
+  {
+      "title": "Crysis",
+      "online": true,
+      "age_restriction": 18,
+      "year_of_manufacture": 2007,
+      "rating": 91,
+      "number_of_games_in_the_series": 3,
+      "publisher": "Electronic Arts"
+  },
+  {
+      "title": "Far Cry",
+      "online": true,
+      "age_restriction": 18,
+      "year_of_manufacture": 2004,
+      "rating": 89,
+      "number_of_games_in_the_series": 11,
+      "publisher": "Ubisoft"
+  },
+  {
+      "title": "Battlefield",
+      "online": true,
+      "age_restriction": 16,
+      "year_of_manufacture": 2002,
+      "rating": 89,
+      "number_of_games_in_the_series": 16,
+      "publisher": "Electronic Arts"
+  },
+  {
+      "title": "DOOM",
+      "online": true,
+      "age_restriction": 18,
+      "year_of_manufacture": 1993,
+      "rating": 85,
+      "number_of_games_in_the_series": 9,
+      "publisher": "id Software"
+  },
+  {
+      "title": "Wolfenstein",
+      "online": true,
+      "age_restriction": 18,
+      "year_of_manufacture": 2009,
+      "rating": 74,
+      "number_of_games_in_the_series": 11,
+      "publisher": "Activision"
+  },
+  {
+      "title": "Bulletstorm",
+      "online": true,
+      "age_restriction": 18,
+      "year_of_manufacture": 2010,
+      "rating": 82,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Electronic Arts"
+  },
+  {
+      "title": "Quake",
+      "online": true,
+      "age_restriction": 18,
+      "year_of_manufacture": 1996,
+      "rating": 94,
+      "number_of_games_in_the_series": 4,
+      "publisher": "Activision"
+  },
+  {
+      "title": "Championship Manager",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1992,
+      "rating": 68,
+      "number_of_games_in_the_series": 5,
+      "publisher": "Sports Interactive"
+  },
+  {
+      "title": "World Soccer Winning Eleven",
+      "online": false,
+      "age_restriction":0,
+      "year_of_manufacture": 1996,
+      "rating": 97,
+      "number_of_games_in_the_series": 9,
+      "publisher": "Konami"
+  },
+  {
+      "title": "Pro Evolution Soccer",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2001,
+      "rating": 76,
+      "number_of_games_in_the_series": 5,
+      "publisher": "Konami"
+  },
+  {
+      "title": "FIFA 18",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2018,
+      "rating": 84,
+      "number_of_games_in_the_series": 28,
+      "publisher": "Electronic Arts"
+  },
+  {
+      "title": "NBA",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2017,
+      "rating": 80,
+      "number_of_games_in_the_series": 22,
+      "publisher": "EA Sports"
+  },
+  {
+      "title": "NHL 18",
+      "online": true,
+      "age_restriction": 18,
+      "year_of_manufacture": 2017,
+      "rating": 75,
+      "number_of_games_in_the_series": 32,
+      "publisher": "EA Sports"
+  },
+  {
+      "title": "IL-2 Sturmovik",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2001,
+      "rating": 91,
+      "number_of_games_in_the_series": 5,
+      "publisher": "Ubisoft"
+  },
+  {
+      "title": "Silent Hunter",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1996,
+      "rating": 76,
+      "number_of_games_in_the_series": 11,
+      "publisher": "Ubisoft"
+  },
+  {
+      "title": "Freelancer",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 2003,
+      "rating": 85,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Microsoft"
+  },
+  {
+      "title": "Flight Simulator",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1982,
+      "rating": 58,
+      "number_of_games_in_the_series": 14,
+      "publisher": "Microsoft"
+  },
+  {
+      "title": "The Sims",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2000,
+      "rating": 92,
+      "number_of_games_in_the_series": 4,
+      "publisher": "Electronic Arts"
+  },
+  {
+      "title": "Singles",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 2003,
+      "rating": 58,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Deep Silver"
+  },
+  {
+      "title": "Spore",
+      "online": false,
+      "age_restriction": 2,
+      "year_of_manufacture": 2008,
+      "rating": 84,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Maxis, Electronic Arts"
+  },
+  {
+      "title": "SimCity",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1989,
+      "rating": 64,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Brøderbund, Maxis, Electronic Arts"
+  },
+  {
+      "title": "Caesar",
+      "online": false,
+      "age_restriction": 6,
+      "year_of_manufacture": 1992,
+      "rating": 70,
+      "number_of_games_in_the_series": 4,
+      "publisher": "Sierra Entertainment"
+  },
+  {
+      "title": "Immortal Cities",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 2004,
+      "rating": 75,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Sega"
+  },
+  {
+      "title": "Glory of the Roman Empire",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 2006,
+      "rating": 66,
+      "number_of_games_in_the_series": 1,
+      "publisher": "cdv Software Entertainment"
+  },
+  {
+      "title": "Shogun: Total War",
+      "online": true,
+      "age_restriction": 13,
+      "year_of_manufacture": 2000,
+      "rating": 84,
+      "number_of_games_in_the_series": 17,
+      "publisher": "Electronic Arts"
+  },
+  {
+      "title": "Company of Heroes",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2006,
+      "rating": 93,
+      "number_of_games_in_the_series": 4,
+      "publisher": "THQ, Sega"
+  },
+  {
+      "title": "X-COM: UFO Defense",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1994,
+      "rating": 93,
+      "number_of_games_in_the_series": 9,
+      "publisher": "MicroProse"
+  },
+  {
+      "title": "Warhammer Online: Age of Reckoning",
+      "online": true,
+      "age_restriction": 13,
+      "year_of_manufacture": 2008,
+      "rating": 86,
+      "number_of_games_in_the_series": 3,
+      "publisher": "Electronic Arts"
+  },
+  {
+      "title": "Commandos: Behind Enemy Lines",
+      "online": true,
+      "age_restriction": 13,
+      "year_of_manufacture": 1998,
+      "rating": 75,
+      "number_of_games_in_the_series": 5,
+      "publisher": "Eidos Interactive"
+  },
+  {
+      "title": "Transistor",
+      "online": false,
+      "age_restriction": 12,
+      "year_of_manufacture": 2014,
+      "rating": 83,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Supergiant Games"
+  },
+  {
+      "title": "Silent Storm",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 2004,
+      "rating": 83,
+      "number_of_games_in_the_series": 1,
+      "publisher": "1C, JoWooD Productions"
+  },
+  {
+      "title": "Valkyria Chronicles",
+      "online": false,
+      "age_restriction": 13,
+      "year_of_manufacture": 2008,
+      "rating": 87,
+      "number_of_games_in_the_series": 4,
+      "publisher": "Sega"
+  },
+  {
+      "title": "Jagged Alliance",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1994,
+      "rating": 68,
+      "number_of_games_in_the_series": 13,
+      "publisher": "Sir-Tech Software"
+  },
+  {
+      "title": "The Banner Saga",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2014,
+      "rating": 80,
+      "number_of_games_in_the_series": 3,
+      "publisher": "Versus Evil"
+  },
+  {
+      "title": "Wasteland",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 1988,
+      "rating": 86,
+      "number_of_games_in_the_series": 3,
+      "publisher": "Electronic Arts, inXile Entertainment"
+  },
+  {
+      "title": "Desperados: Wanted Dead or Alive",
+      "online": false,
+      "age_restriction": 13,
+      "year_of_manufacture": 2001,
+      "rating": 78,
+      "number_of_games_in_the_series": 3,
+      "publisher": "Atari, 1C"
+  },
+  {
+      "title": "Blackguards",
+      "online": false,
+      "age_restriction": 13,
+      "year_of_manufacture": 2013,
+      "rating": 68,
+      "number_of_games_in_the_series": 2,
+      "publisher": "Daedalic Entertainment"
+  },
+  {
+      "title": "Chess Ultra",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2017,
+      "rating": 79,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Ripstone Ltd."
+  },
+  {
+      "title": "Tetris Ultimate",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 2014,
+      "rating": 63,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Ubisoft"
+  },
+  {
+      "title": "Bejeweled",
+      "online": false,
+      "age_restriction": 0,
+      "year_of_manufacture": 2001,
+      "rating": 72,
+      "number_of_games_in_the_series": 3,
+      "publisher": "PopCap Games, Electronic Arts"
+  },
+  {
+      "title": "Планета самоцветов",
+      "online": true,
+      "age_restriction": 0,
+      "year_of_manufacture": 2011,
+      "rating": 77,
+      "number_of_games_in_the_series": 1,
+      "publisher": "Nevosoft Inc"
+  }
+]
